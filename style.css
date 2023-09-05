@@ -3,8 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-.outer-col{
+.App{
     width: 100%;
+    height: 600px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outer-col{
+    width: 80%;
     height: auto;
     float: left;
     position: relative;
@@ -18,8 +26,8 @@
     float: left;
     background-color: #4388bf;
     position: absolute;
-    top: 22%;
-    left: 240px;
+    top: 23%;
+    left: 23%;
     rotate: 5deg;
     border-top-left-radius: 50px;
     border-top-right-radius: 20px;
@@ -74,3 +82,11 @@
 }
 
 
+
+@media screen and (min-width: 1280px) and (max-width: 4000px){
+    .App{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
